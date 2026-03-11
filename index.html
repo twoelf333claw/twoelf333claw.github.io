@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | cy</title>
+  <meta name="description" content="Professional resume and portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1020;--card:#111934;--text:#ecf2ff;--muted:#a8b4d6;--acc:#66e3ff;--line:#2a355f}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Manrope,sans-serif;background:radial-gradient(900px 500px at 10% -10%,#1e2d63 0%,transparent 60%),radial-gradient(900px 500px at 90% 110%,#2d1c57 0%,transparent 60%),var(--bg);color:var(--text)}
+    .wrap{max-width:980px;margin:0 auto;padding:36px 20px 72px}
+    .hero{display:grid;gap:10px;padding:24px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01))}
+    .pill{display:inline-block;border:1px solid #37508d;border-radius:999px;padding:6px 12px;font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:#b7d7ff}
+    .intro{margin:0;color:var(--text);font-size:1.02rem;line-height:1.65}
+    .grid{margin-top:18px;display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:860px){.grid{grid-template-columns:1.2fr .8fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .card h2{margin:0 0 10px;font-size:1.05rem}
+    .item{padding:10px 0;border-top:1px dashed #2d3a66}.item:first-of-type{border-top:0;padding-top:0}
+    .meta{font-family:"IBM Plex Mono",monospace;color:#9db0de;font-size:.78rem}
+    a{color:var(--acc);text-decoration:none} a:hover{text-decoration:underline}
+    .footer{margin-top:18px;color:#8ea0cf;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="pill">GitHub Pages Resume</span>
+      <p class="intro">Hi, I’m cy (MSPM, PMP, PSM, and CLSSBB). I build reliable, operations-focused systems with strong execution discipline across IT, ERP (SAP), and PM domains, spanning automation, observability, and delivery workflows.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Focus Areas</h2>
+        <div class="item">AI-assisted operations and workflow orchestration</div>
+        <div class="item">Backup reliability, recovery validation, and operational resilience</div>
+        <div class="item">GitHub-based governance, CI/CD quality gates, and release discipline</div>
+      </article>
+
+      <aside class="card">
+        <h2>Contact</h2>
+        <div class="item"><a href="https://github.com/twoelf333claw" target="_blank" rel="noreferrer">GitHub (cy)</a></div>
+        <div class="item"><a href="mailto:twoelf333.claw@gmail.com">Email (twoelf333.claw)</a> — I’ll review your message and follow up via my personal email.</div>
+      </aside>
+
+      <article class="card" style="grid-column:1/-1">
+        <h2>Selected Work</h2>
+        <div class="item">
+          <strong>claw-B1 Operations Stack</strong>
+          <div class="meta">Tech: Python / Shell / SQLite / GitHub Actions</div>
+          <p>Operations automation and reliability workflow for backup, monitoring, and reporting. <a href="https://github.com/twoelf333claw/claw-B1" target="_blank" rel="noreferrer">Repo</a></p>
+        </div>
+        <div class="item">
+          <strong>GitHub Project Ops Board</strong>
+          <div class="meta">Tech: GitHub Projects / Workflow Governance</div>
+          <p>Structured operation views for approval, blocked queue, and priority control. <a href="https://github.com/twoelf333claw/claw-B1/projects" target="_blank" rel="noreferrer">Projects</a></p>
+        </div>
+      </article>
+
+      <article class="card" style="grid-column:1/-1">
+        <h2>Resume</h2>
+        <div class="item"><a href="https://twoelf333claw.github.io" target="_blank" rel="noreferrer">Full Resume (GitHub Pages)</a> — available upon request.</div>
+      </article>
+    </section>
+
+    <p class="footer">© <span id="y"></span> cy — Resume on GitHub Pages</p>
+  </main>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
